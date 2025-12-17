@@ -92,7 +92,6 @@ as _queues_ and _stacks_. We will discuss these more later on in this module.
 
 Tuples!
 
-
 ---
 
 ## [Common Sequence Operations][common sequence operations]
@@ -170,7 +169,6 @@ There are several strategies for accessing the ends of sequences:
 - Use a slice to get the last two elements: `s[-2:]`.
 - Use a negative-step slice if you need the elements in reverse order:
   `s[-1:-3:-1]`.
-
 
 ---
 
@@ -320,14 +318,10 @@ print(my_list)
 # => ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 ```
 
-<details>
-  <summary>
-    <em>Which method allows you to insert characters into the middle of a list?</em>
-  </summary>
+**Which method allows you to insert characters into the middle of a list?**
 
-  <h3><code>list.insert()</code></h3>
-</details>
-<br/>
+`list.insert()`
+
 
 ### Removing from Lists
 
@@ -438,7 +432,6 @@ print(my_range)
 or cast it to a `list` or `tuple`. For `range(2, 10, 2)` the contents would be:
 
 2, 4, 6, 8
-
 
 ---
 
