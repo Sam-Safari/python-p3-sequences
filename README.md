@@ -88,14 +88,10 @@ sentence_string = "Strings are immutable sequences of Unicode code points."
 After being defined, sequences can be used as more complex data structures such
 as _queues_ and _stacks_. We will discuss these more later on in this module.
 
-<details>
-  <summary>
-    <em>Which sequence type is surrounded by parentheses?</em>
-  </summary>
+**Which sequence type is surrounded by parentheses?**
 
-  <h3>Tuples!</h3>
-</details>
-<br/>
+Tuples!
+
 
 ---
 
@@ -162,25 +158,19 @@ s.count(9)
 # => 1
 ```
 
-<details>
-  <summary>
-    <em>How would you retrieve the last two elements of a sequence if you don't
-        know the length?</em>
-  </summary>
+**How would you retrieve the last two elements of a sequence if you don't
+know the length?**
 
-  <h3>There are several strategies for accessing the ends of sequences:</h3>
-  <div>
-        <p>Use the <code>len()</code> function to find the length of the
-            sequence, then access the last two elements at
-            <code>s[len(s) - 1], s[len(s) - 2].</code></p>
-        <p>Use negative indexing to directly access the last two elements of
-            the list: <code>s[-1], s[-2]</code>.</p>
-        <p>Use negative indexing to access a list of the last two elements <code>s[-2:]</code>.</p>
-        <p>Use negative indexing to slice the last two elements of the
-            sequence: <code>s[-1:-3:-1]</code>.</p>
-    </div>
-</details>
-<br/>
+There are several strategies for accessing the ends of sequences:
+
+- Use the `len()` function to find the length of the sequence, then access the
+  last two elements at `s[len(s) - 1]` and `s[len(s) - 2]`.
+- Use negative indexing to directly access the last two elements of the list:
+  `s[-1]`, `s[-2]`.
+- Use a slice to get the last two elements: `s[-2:]`.
+- Use a negative-step slice if you need the elements in reverse order:
+  `s[-1:-3:-1]`.
+
 
 ---
 
@@ -442,20 +432,13 @@ print(my_range)
 # => range(0, 4)
 ```
 
-<details>
-  <summary>
-    <em>What would <code>range(2, 10, 2) produce?</code></em>
-  </summary>
+**What would `range(2, 10, 2)` produce?**
 
-  <h3><code>range(2, 10, 2)</code></h3>
-  <p><code>range()</code> statements produce <code>range</code> objects.</p>
-  <p>To view the contents, of a <code>range</code> object, you must loop
-     through and print each element <em>or</em> cast the range object to a
-     <code>list</code> or <code>tuple</code> using their class constructors.</p>
-  <p>The contents of this <code>range</code> would be:
-     <code>2, 4, 6, 8</code></p>
-</details>
-<br/>
+`range()` returns a `range` object. To view its contents you can iterate over it
+or cast it to a `list` or `tuple`. For `range(2, 10, 2)` the contents would be:
+
+2, 4, 6, 8
+
 
 ---
 
